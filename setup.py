@@ -7,7 +7,7 @@ setup(
   author = 'Russell Plunkett',
   author_email = 'russ.plunkett@gmail.com',
   url = 'https://github.com/RustyBrain/PublicHealthCIs.git', # use the URL to the github repo
-  download_url = 'https://github.com/peterldowns/mypackage/archive/0.1.tar.gz', # I'll explain this in a second
+  download_url = 'https://github.com/RustyBrain/PublicHealthCIs/archive/0.1.tar.gz', # I'll explain this in a second
   keywords = ['confidence interval', 'wilsons', 'byars', 'statistics'], # arbitrary keywords
   classifiers = [],
 )
