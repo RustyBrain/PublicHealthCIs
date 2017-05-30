@@ -1,26 +1,31 @@
+from math import sqrt
 from scipy.special import ndtri
 from scipy.stats import chi2
-from math import sqrt
-
-alpha = 0.05
-norm_cum_dist = ndtri((100 + 95) / 200)
-z = ndtri(1 - alpha / 2)
 
 
-def wilson_lower(value, count, denominator, rate):
+def get_calc_variables(a):
+    norm_cum_dist = ndtri((100 + (100 - (100 * a))) / 200)
+    z = ndtri(1 - a / 2)
+    return norm_cum_dist, z
+
+
+def wilson_lower(value, count, denominator, rate, alpha=0.05):
+    norm_cum_dist, z = get_calc_variables(alpha)
     lower_ci = ((2 * count + norm_cum_dist ** 2 - norm_cum_dist * sqrt(norm_cum_dist ** 2 + 4 * count * ((rate -
                     value) / rate))) / 2 / (denominator + norm_cum_dist ** 2)) * rate
     return lower_ci
 
 
-def wilson_upper(value, count, denominator, rate):
-    upper_ci = (2 * count + norm_cum_dist ** 2 + norm_cum_dist * sqrt((norm_cum_dist) ** 2 + 4 * count * ((rate - value)
+def wilson_upper(value, count, denominator, rate, alpha=0.05):
+    norm_cum_dist, z = get_calc_variables(alpha)
+    upper_ci = (2 * count + norm_cum_dist ** 2 + norm_cum_dist * sqrt(norm_cum_dist ** 2 + 4 * count * ((rate - value)
                 / rate))) / 2 / (denominator + norm_cum_dist ** 2) * rate
 
     return upper_ci
 
 
-def byars_lower(count, denominator, rate):
+def byars_lower(count, denominator, rate, alpha=0.05):
+    norm_cum_dist, z = get_calc_variables(alpha)
     if count < 389:
         b = (chi2.ppf((alpha * 2), (count * 2)) / 2)
         c = b / denominator
@@ -36,7 +41,8 @@ def byars_lower(count, denominator, rate):
         return lower_ci
 
 
-def byars_upper(count, denominator, rate):
+def byars_upper(count, denominator, rate, alpha=0.05):
+    norm_cum_dist, z = get_calc_variables(alpha)
     if count < 389:
         b = chi2.ppf(1 - (alpha / 2), 2 * count + 2) / 2
         c = b / denominator
