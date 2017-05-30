@@ -11,7 +11,7 @@ setup(
     keywords=['confidence interval', 'wilsons', 'byars', 'statistics'], # arbitrary keywords
     classifiers=[
         'Programming Language :: Python :: 3',
-        'Topic :: Scientific/Engineering :: Statistics',
+        'Topic :: Scientific/Engineering :: Mathematics',
         'Intended Audience :: Science/Research',
         'Intended Audience :: Education',
     ],
