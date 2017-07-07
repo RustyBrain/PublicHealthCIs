@@ -3,7 +3,7 @@ setup(
     name='public_health_cis',
     packages=['public_health_cis'], # this must be the same as the name above
     py_modules=['public_health_cis'],
-    version='0.1.2',
+    version='0.1.3',
     description='A lib to calculate specific confidence intervals that are used in Public Health',
     author='Russell Plunkett',
     author_email='russ.plunkett@gmail.com',
