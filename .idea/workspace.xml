@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e9f3780-76a9-45f6-a7f9-5150b6b3f315" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_health_cis/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public-health-cis/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public-health-cis/public-health-cis.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public-health-cis.py" afterPath="$PROJECT_DIR$/public_health_cis/public_health_cis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MANIFEST" afterPath="$PROJECT_DIR$/MANIFEST" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_health_cis/public_health_cis.py" afterPath="$PROJECT_DIR$/public_health_cis/public_health_cis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,24 +29,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="public_health_cis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_health_cis/public_health_cis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".pypirc" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.pypirc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="public_health_cis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/public_health_cis/public_health_cis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
-              <caret line="77" column="46" lean-forward="false" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,6 +128,7 @@
         <option value="$PROJECT_DIR$/public-health-cis/public-health-cis.py" />
         <option value="$USER_HOME$/.pypirc" />
         <option value="$USER_HOME$/Anaconda3/Lib/site-packages/public_health_cis/public_health_cis.py" />
+        <option value="$PROJECT_DIR$/public_health_cis/public_health_cis.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
@@ -459,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499438575249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Returns np.nan if a ValueError is raised at either higher or&#10;lower confidence intervals">
+      <created>1507895577712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1507895577712</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -499,23 +503,14 @@
     <MESSAGE value="added ability to declare alpha. Default set at 0.05" />
     <MESSAGE value="Changed topic in setup" />
     <MESSAGE value="Amended error in Byars Lower calculation.&#10;Added Wilson and Byars functions which return a tuple of lower and upper confidence intervals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended error in Byars Lower calculation.&#10;Added Wilson and Byars functions which return a tuple of lower and upper confidence intervals." />
+    <MESSAGE value="Returns np.nan if a ValueError is raised at either higher or&#10;lower confidence intervals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Returns np.nan if a ValueError is raised at either higher or&#10;lower confidence intervals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/public_health_cis/public_health_cis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="97" lean-forward="false" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -780,10 +775,18 @@
     <entry file="file://$PROJECT_DIR$/dist/PublicHealthCIs-0.1/PublicHealthCIs-0.1/setup.py" />
     <entry file="file://$PROJECT_DIR$/public-health-cis.py" />
     <entry file="file://$PROJECT_DIR$/public-health-cis/public-health-cis.py" />
-    <entry file="file://$USER_HOME$/.pypirc">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -798,19 +801,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$USER_HOME$/.pypirc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST">
+    <entry file="file://$PROJECT_DIR$/public_health_cis/public_health_cis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="63">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
